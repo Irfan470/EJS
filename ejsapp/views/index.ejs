@@ -1,11 +1,25 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
   <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="../public/stylesheets/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <title>Hello, world!</title>
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+    <body>
+      <%- include('./partials/navbar.ejs') %>
+      <%- include('./partials/carousel.ejs') %>
+      <%- include('./partials/button-group.ejs') %>
+      <%- include('./partials/helloList.ejs', {users: ["John Doe", "Mark White", "Barbara Smith", newUser]}) %>
+      <%- include('./partials/toast.ejs') %>
+      <%- include('./partials/scripts.ejs') %>
+      <script src="../public/javascripts/bootstrap.bundle.min.js"></script>
+      <script src="../public/javascripts/jquery-3.7.1.min.js"></script>
+      
+    </body>
   </body>
 </html>

@@ -1,0 +1,7 @@
+<ul>
+    <%users.forEach(function(user, index){ %>
+        <% if(index%2==1) {%>
+      <li>Hello <%- user %></li>
+        <% } %>
+    <% }); %>
+</ul>
